@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "tire", git: "git://github.com/karmi/tire.git"
+gem "will_paginate", "~> 3.0"

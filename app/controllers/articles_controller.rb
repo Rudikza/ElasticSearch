@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
 
     # GET /articles/search
   def search
-    @articles = Article.tire.search params[:q]
+    @articles = Article.tire.search params[:q].downcase
 
     render :action => "index"
   end
